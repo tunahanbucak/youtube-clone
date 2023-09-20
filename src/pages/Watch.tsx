@@ -22,6 +22,7 @@ import {
   Share as ShareIcon,
   MoreVert as MoreVertIcon,
 } from "@mui/icons-material";
+import { RecommendedVideos } from "../Types";
 
 export default function Watch() {
   const [showMoreStatus, setShowMoreStatus] = useState<boolean>(false);
@@ -227,7 +228,7 @@ export default function Watch() {
               </Box>
               <Box className="mr-24 flex flex-col gap-3">
                 {recommendedVideos.length &&
-                  recommendedVideos.map((item) => {
+                  recommendedVideos.map((item: RecommendedVideos) => {
                     return <WatchCard data={item} key={item.videoId} />;
                   })}
               </Box>
