@@ -1,4 +1,3 @@
-import React from "react";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import MicIcon from "@mui/icons-material/Mic";
@@ -6,7 +5,6 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import VideoCameraBackIcon from "@mui/icons-material/VideoCameraBack";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
-import AppsIcon from "@mui/icons-material/Apps";
 import { Box, Button, TextField, Typography } from "@mui/material";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
@@ -33,7 +31,6 @@ export default function Navbar() {
         justifyContent: "space-between",
         alignItems: "center",
         padding: "0 14px",
-        //height: "14px",
         backgroundColor: "#212121",
         opacity: 0.95,
         position: "sticky",
@@ -102,7 +99,6 @@ export default function Navbar() {
             sx={{
               display: "flex",
               backgroundColor: "#181818",
-              // backgroundColor: "#444",
               alignItems: "center",
               height: "2.5rem",
             }}
@@ -129,7 +125,6 @@ export default function Navbar() {
                 style={{
                   width: "24rem",
                   backgroundColor: "#181818",
-                  //backgroundColor: "#444",
                   outline: "none",
                   border: "none",
                 }}
@@ -138,7 +133,7 @@ export default function Navbar() {
                 sx={{
                   fontSize: "1.25rem",
                   cursor: "pointer",
-                  visibility: !searchTerm ? "hidden" : "visible", // Equivalent to the original className logic
+                  visibility: !searchTerm ? "hidden" : "visible",
                 }}
                 onClick={() => dispatch(clearSearchTerm())}
               />

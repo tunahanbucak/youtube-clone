@@ -1,19 +1,11 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import { useAppDispatch, useAppSelector } from "../store/hooks";
 import { getRecommendedVideos } from "../store/reducers/getRecommendedVideos";
 import { getVideoDetails } from "../store/reducers/getVideoDetails";
 import WatchCard from "../components/WatchCard";
-import {
-  Box,
-  Typography,
-  Button,
-  Card,
-  CardContent,
-  CardMedia,
-  Avatar,
-} from "@mui/material";
+import { Box, Typography, Button, Avatar } from "@mui/material";
 import {
   ThumbUp as ThumbUpIcon,
   ThumbDown as ThumbDownIcon,

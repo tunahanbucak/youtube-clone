@@ -68,14 +68,6 @@ export default function Search() {
               loader={<Spinner />}
               height={600}
             >
-              {/* <Box
-                sx={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
-                  gap: "3.5rem 2rem",
-                  padding: "2rem",
-                }}
-              > */}
               {videos.map((item: HomePageVideos) => {
                 return (
                   <Box

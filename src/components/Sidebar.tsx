@@ -204,25 +204,6 @@ export default function Sidebar() {
     },
   ];
 
-  const textLinks = [
-    [
-      "About",
-      "Press",
-      "Copyright",
-      "Contact us",
-      "Creator",
-      "Advertise",
-      "Developers",
-    ],
-    [
-      "Terms",
-      "Privacy",
-      "Policy & Safety",
-      "How YouTube works",
-      "Test new features",
-    ],
-  ];
-
   return (
     <Box
       sx={{
